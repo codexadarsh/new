@@ -53,17 +53,18 @@ function App() {
         pdf.save('invoice.pdf');
     };
     const handleShowApp = () => {
-        const Home = document.querySelector('.home').style.display = 'none';
-        const App = document.querySelector('.App').style.display = 'block';
-        if (Home == true) {
-            App.style.display = 'block';
-        }
-    }
+        document.querySelector('.home').style.display = 'none';
+        document.querySelector('.App').style.display = 'block';
+    };
+    const handleShowHome = () => {
+        document.querySelector('.home').style.display = 'block';
+        document.querySelector('.App').style.display = 'none';
+    };
     return (
         <><div className='home'>
             <Navbar />
             <Hero />
-            <button onClick={handleShowApp}>Get Started</button>
+            <button className='btn' onClick={handleShowApp}>Get Started</button>
         </div>
         <div className="App">
                 <h1>Bill/Invoice Generator</h1>
@@ -74,6 +75,8 @@ function App() {
                     total={calculateTotalAmount()} />
                 <button
                     onClick={handleDownloadPDF}>Download PDF</button>
+                <button className='btn'
+                onClick={handleShowHome}>Home</button>
             </div>
             </>
     );

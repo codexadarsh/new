@@ -50,7 +50,7 @@ button:hover {
   margin-top: 20px;
 }
 
-.download-btn {
+/* .download-btn {
   background-color: #008CBA;
   color: #fff;
   padding: 10px;
@@ -62,4 +62,10 @@ button:hover {
 
 .download-btn:hover {
   background-color: #005684;
+} */
+.btn1 {
+  margin-left: 1vw;
+}
+.btn1:hover{
+  background-color: red;
 }
