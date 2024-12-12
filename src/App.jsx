@@ -52,10 +52,7 @@ function App() {
         // Save the PDF
         pdf.save('invoice.pdf');
     };
-    const handleShowApp = () => {
-        document.querySelector('.home').style.display = 'none';
-        document.querySelector('.App').style.display = 'block';
-    };
+    
     const handleShowHome = () => {
         document.querySelector('.home').style.display = 'block';
         document.querySelector('.App').style.display = 'none';
@@ -64,7 +61,7 @@ function App() {
         <><div className='home'>
             <Navbar />
             <Hero />
-            <button className='btn' onClick={handleShowApp}>Get Started</button>
+            
         </div>
         <div className="App">
                 <h1>Bill/Invoice Generator</h1>

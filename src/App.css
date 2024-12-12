@@ -1,6 +1,7 @@
 /* src/App.css */
  
 .App {
+  display: none;
   max-width: 600px;
   margin: 30px auto;
   background-color: #fff;
@@ -63,9 +64,10 @@ button:hover {
 .download-btn:hover {
   background-color: #005684;
 } */
-.btn1 {
+.btn {
   margin-left: 1vw;
+
 }
-.btn1:hover{
+.btn:hover{
   background-color: red;
 }
