@@ -64,10 +64,46 @@ button:hover {
 .download-btn:hover {
   background-color: #005684;
 } */
+ 
 .btn {
   margin-left: 1vw;
+}
+ 
+ 
+.login-container {
+  display: none;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  
+}
 
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.btn:hover{
-  background-color: red;
-}
+
+/* .login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* .login-container button:hover {
+  background-color: #45a049;
+} */

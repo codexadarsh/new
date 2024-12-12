@@ -7,7 +7,7 @@ import { jsPDF } from 'jspdf';
 import './App.css';
 import Navbar from './Component/Navbar';
 import Hero from './Component/Hero';
-
+import Login from './Component/Login';
 function App() {
     const [items, setItems] = React.useState([]);
 
@@ -75,6 +75,9 @@ function App() {
                 <button className='btn'
                 onClick={handleShowHome}>Home</button>
             </div>
+        <div className='form'>
+            <Login />
+        </div>
             </>
     );
 }

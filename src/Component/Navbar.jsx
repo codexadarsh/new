@@ -1,6 +1,10 @@
 import React from 'react'
 
 const Navbar = () => {
+  const handleform = () => {
+    document.querySelector('.home').style.display = 'none';
+    document.querySelector('.login-container').style.display = 'block';
+};
   return (
     <div>
         <div className="nav">
@@ -13,7 +17,7 @@ const Navbar = () => {
             </ul>
             <div>
             <button>Sign Up</button>
-            <button>Login</button>
+            <button onClick={handleform}>Login</button>
             </div>
 
         </div>
